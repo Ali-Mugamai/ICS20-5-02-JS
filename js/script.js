@@ -31,10 +31,9 @@ function myButtonClicked() {
 
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-    "<p>Value is: " + randomNumber + "</p>"
+      "<p>Value is: " + randomNumber + "</p>"
   } else {
     document.getElementById("radio-button-value").innerHTML =
-
-    "<p>Value is: " + negative_random + "</p>"
+      "<p>Value is: " + negative_random + "</p>"
   }
 }
