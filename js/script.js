@@ -7,13 +7,10 @@
 /**
  * Check servie worker.
  */
- if (navigator.serviceWorker) {
-  navigator.serviceWorker.register(
-    "/ICS20-5-02-JS/sw.js",
-    {
-      scope: "/ICS20-5-02-JS/",
-    }
-  )
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS20-5-02-JS/sw.js", {
+    scope: "/ICS20-5-02-JS/",
+  })
 }
 
 /**
@@ -27,16 +24,16 @@ function updateSliderValue(valueFromSlider) {
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById('positive_number').checked
-  
+  buttonOnChecked = document.getElementById("positive_number").checked
+
   const randomNumber = Math.floor(Math.random() * 6) + 1
   const negative_random = Math.floor(Math.random() * -5) - 1
-  
+
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-    "<p>Value is: On" + randomNumber + "</p>"
+      "<p>Value is: On" + randomNumber + "</p>"
   } else {
     document.getElementById("radio-button-value").innerHTML =
-    "<p>Value is: Off" + negative_random + "</p>"
+      "<p>Value is: Off" + negative_random + "</p>"
   }
 }
